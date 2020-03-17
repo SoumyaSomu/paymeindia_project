@@ -1,0 +1,189 @@
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.users-table{
+  border: 1px solid white;
+  background-color: white;
+  width: 95%;
+  margin-left: 38%;
+}
+
+.pd-top{
+  padding-top: 0px!important;
+}
+
+.manage-users{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: fantasy;
+    margin: 20px;
+    color: black;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 16px;
+}
+
+.table-heading{
+  font-family: fantasy;
+}
+
+.edit-icon{
+    padding: 10px;
+    font-size: 22px;
+    color: #00bfba;
+}
+
+.shield-icon{
+    font-size: 22px;
+    color: #00bfba;
+}
+
+.add-new-user{
+    width:100%;
+    background-color:#00bfba;
+    border-color:#00bfba;
+    font-family: fantasy;
+    margin-bottom: 25px;
+}
+.toggle-switch {
+  position: relative;
+  width: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-align: left;
+}
+.toggle-switch-checkbox {
+  display: none;
+}
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0 solid #ccc;
+  border-radius: 20px;
+  margin: 0;
+}
+.toggle-switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.toggle-switch-inner::before, .toggle-switch-inner::after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 34px;
+  padding: 0;
+  line-height: 34px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.toggle-switch-inner:before {
+  content: "Yes";
+  text-transform: uppercase;
+  padding-left: 10px;
+  background-color: #9eeae7;
+  color: #fff;
+}
+.toggle-switch-disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.toggle-switch-disabled::before {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.toggle-switch-inner::after {
+  content: "No";
+  text-transform: uppercase;
+  padding-right: 10px;
+  background-color: #ff969d;
+  color: #fff;
+  text-align: right;
+}
+.toggle-switch-switch {
+  display: block;
+  width: 24px;
+  margin: 5px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  border: 0 solid #ccc;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  right: 0px;
+}
+.toggle-switch-inner::before {
+  content: attr(data-yes);
+  /* other styles */
+}
+.toggle-switch-inner::after {
+  content: attr(data-no);
+  /* other styles */
+}
+.toggle-switch.small-switch {
+  width: 40px;
+}
+.toggle-switch.small-switch .toggle-switch-inner:after, .toggle-switch.small-switch .toggle-switch-inner:before {
+  content: "";
+  height: 20px;
+  line-height: 20px;
+}
+.toggle-switch.small-switch .toggle-switch-switch {
+  width: 16px;
+  right: 20px;
+  margin: 2px;
+}
+table {
+    width: 716px; /* 140px * 5 column + 16px scrollbar width */
+    border-spacing: 0;
+}
+
+tbody, thead tr { display: block; }
+
+tbody {
+    height: 330px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody td, thead th {
+    width: 140px;
+}
+
+thead th:last-child {
+    width: 156px; /* 140px + 16px scrollbar width */
+}
+
+@media screen and (max-width: 991px) {
+  .toggle-switch {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 767px) {
+  .toggle-switch {
+    transform: scale(0.825);
+  }
+}
+@media screen and (max-width: 575px) {
+  .toggle-switch {
+    transform: scale(0.75);
+  }
+}

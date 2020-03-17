@@ -1,0 +1,37 @@
+.submit{
+	width:100%;
+	background-color:#00bfba;
+	border-color:#00bfba;
+	font-family: fantasy;
+}
+
+.heading{
+	color:#00bfba;
+	font-family: fantasy;
+}
+
+.modal .modal-content {
+    padding: 0px!important;
+    margin-top: 6%;
+}
+
+.modal-header{
+	padding: 8px!important;
+	background-color: #f6f6f6;
+}
+
+label{
+	color: black;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.modal{
+	z-index: 9000;
+	max-height: 100%;
+	background-color: transparent;
+}
+
+.margin-bottom-25{
+	margin-bottom: 25px;
+}
